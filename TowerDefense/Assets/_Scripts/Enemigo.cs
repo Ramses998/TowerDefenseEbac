@@ -10,6 +10,16 @@ public class Enemigo : MonoBehaviour
 
     public Animator Anim;
 
+    private void OnEnable()
+    {
+        objetivo = GameObject.Find("Objetivo");
+    }
+
+    private void OnDisable()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
