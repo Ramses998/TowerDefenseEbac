@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 1682694908689434156}
   m_Layer: 0
   m_Name: Yaku J Ignite
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,6 +486,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   vida: 40
+  _dano: 5
+  recursosGanados: 200
+  referenciaAdminJuego: {fileID: 0}
+  referenciaSpawner: {fileID: 0}
   Anim: {fileID: 0}
 --- !u!195 &1682694908689434156
 NavMeshAgent:
