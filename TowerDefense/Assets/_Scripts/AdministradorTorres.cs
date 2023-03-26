@@ -67,7 +67,7 @@ public class AdministradorTorres : MonoBehaviour
                 }
             }
         }
-        Invoke("ActualizarObjetivo", 3);
+        Invoke("ActualizarObjetivo", 1);
     }
 
     private void CrearTorre(GameObject plataforma)
@@ -77,6 +77,8 @@ public class AdministradorTorres : MonoBehaviour
             TorreSeleccionada.Torre1 => 400,
             TorreSeleccionada.Torre2 => 600,
             TorreSeleccionada.Torre3 => 800,
+            TorreSeleccionada.Torre4 => 1200,
+            TorreSeleccionada.Torre5 => 2000,
             _ => 0
         };
 
@@ -88,6 +90,9 @@ public class AdministradorTorres : MonoBehaviour
             posParaInstanciar.y += 0.5f;
             GameObject torreInstanciada = Instantiate<GameObject>(prefabsTorres[indiceTorre], posParaInstanciar, Quaternion.identity);
             torreInstanciada.transform.SetParent(plataforma.transform);
+
+            torresInstanciadas.Add(torreInstanciada);
+
         }
         
     }

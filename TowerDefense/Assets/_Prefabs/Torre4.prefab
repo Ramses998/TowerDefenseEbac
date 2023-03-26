@@ -595,6 +595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4920519060315904749}
+  - component: {fileID: -3351179451550195131}
   m_Layer: 0
   m_Name: Torre4
   m_TagString: Untagged
@@ -620,6 +621,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3351179451550195131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920519060315904748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d636176ad0094f32b2a74f42a0b14b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 0}
+  prefabBala: {fileID: 5552200391427256697, guid: deceeb3f2f9124daf91afde696c36f1c, type: 3}
+  puntasCanon:
+  - {fileID: 4920519060365927171}
+  - {fileID: 1632240941412647155}
+  - {fileID: 1632240940599957370}
+  - {fileID: 1632240939643448658}
 --- !u!1 &4920519060365927171
 GameObject:
   m_ObjectHideFlags: 0
